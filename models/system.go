@@ -10,6 +10,7 @@ var PathPurgeAudit = "/system/purgeaudit/schedule"
 
 type JobParameters struct {
 	DeleteUntagged     bool   `json:"delete_untagged,omitempty"`
+	Workers			   int    `json:"workers,omitempty"` 
 	AuditRetentionHour int    `json:"audit_retention_hour,omitempty"`
 	IncludeOperations  string `json:"include_operations,omitempty"`
 }
